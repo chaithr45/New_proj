@@ -135,7 +135,7 @@ One build script regenerates the layout from code, runs Magic DRC and Netgen LVS
  & This work & \cite{harrison2003} & \cite{lee2019} & \cite{park2022} \\
 \midrule
 Process & SKY130 & 1.5\um{} & 65\,nm & 110\,nm \\
-Supply (V) & 1.8 & 5 & 0.8 & 1 \\
+Supply (V) & 1.8 & 5 & 0.8 & 1/1.5 \\
 Chopper & no & no & yes & yes \\
 Gain (dB) & 37.8 & 39.5 & -- & -- \\
 Noise (\textmu V\textsubscript{rms}) & 2.95\textsuperscript{a} & 2.2 & 0.38\textsuperscript{a} & 0.36\textsuperscript{b} \\
@@ -248,9 +248,9 @@ Result & F1 87.9\% & sens.\ 95.6\% & 100\% events & 47.8\% at \\
  & & spec.\ 96.8\% & 0.3 FP/h & 0.91 FA/h \\
 Power or & 41.2 & 0.227 & 9.1\,mW & 53\,mW \\
 energy & nJ/class & \textmu J/class & (meas.) & (est.) \\
-Latency & 1.1\,s & -- & 0.5\,\textmu s & 24\,\textmu s \\
+Latency & 1.1\,s\textsuperscript{a} & -- & 0.5\,\textmu s & 24\,\textmu s \\
 \bottomrule
-\multicolumn{5}{@{}p{0.98\columnwidth}@{}}{\scriptsize Per-patient models are trained and tested on the same patient and are not directly comparable with across-patient results.}
+\multicolumn{5}{@{}p{0.98\columnwidth}@{}}{\scriptsize Per-patient models are trained and tested on the same patient and are not directly comparable with across-patient results. \textsuperscript{a}Delay from seizure onset to detection; the other latencies are processing times per inference or frame.}
 \end{tabular}
 \end{table}
 
